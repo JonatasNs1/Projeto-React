@@ -3,13 +3,15 @@
     display: flex;
     /*   justify-content: space-between; - vai espaçar os elementos de forma igual  */
     justify-content: space-between;
+    /* justify-content: center; */
     margin: 0 auto;
+    /* background-color: brown; */
     flex-wrap: wrap;/* quando os elementos filhos passsarem da largura 1200 vao para 
   baixo criando uma nova linha */
 }
 
 .min-height{
-    min-height: 75%;
+    min-height: 100%;
 }
 
 .start{

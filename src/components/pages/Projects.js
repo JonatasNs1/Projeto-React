@@ -1,11 +1,11 @@
-function NewProject(){
+function Projects(){
     return(
         <div>
             <h1>
-            NewProject
+            Projects
             </h1>
         </div>
     )
 }
 
-export default NewProject;
+export default Projects;
