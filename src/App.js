@@ -8,6 +8,7 @@ import Container from './components/layout/Container';
 import NavBar from './components/layout/NavBar'
 import Footer from './components/layout/Footer';
 import Projects from './components/pages/Projects';
+import NewProjects from './components/pages/NewProjects';
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
                   <Route
                     exact path='/contact' 
                     element={<Contact/>} 
+                  >
+                  </Route>
+                  <Route
+                    exact path='/newProjects' 
+                    element={<NewProjects/>} 
                   >
                   </Route>
                     
