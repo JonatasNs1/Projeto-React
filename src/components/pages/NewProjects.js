@@ -6,7 +6,7 @@ import styles from './NewProjects.module.css'
 function NewProjects(){
 
     //vai permitir redirecionar nas paginas do sistema
-    	const history = useNavigate()
+    	const navigate = useNavigate()
 
         function createPost(project){
             // inicializar alguns produtos zerados
@@ -26,9 +26,7 @@ function NewProjects(){
                 console.log(data)
                 //redirect
 
-                history('/projects',{
-                    message:'criado com sucesso'
-                })
+                navigate('/projects', { state: {message: 'Projeto criado com sucesso!'} })
 
             }).catch(err => console.log(err))
         }

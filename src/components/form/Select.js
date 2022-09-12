@@ -1,5 +1,7 @@
 import styles from './Select.module.css'
 
+
+// onChange ele é sempre executado quando fazemos alguma alteração no html
 function Select({text, name, options, handleOnchange, value}){
     return(
         <div className={styles.formControl}>
