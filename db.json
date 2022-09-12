@@ -164,6 +164,50 @@
       "cost": 0,
       "services": [],
       "id": 15
+    },
+    {
+      "name": "a",
+      "budget": "12",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 16
+    },
+    {
+      "name": "a",
+      "budget": "12",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 17
+    },
+    {
+      "name": "teste",
+      "budget": "1",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 18
+    },
+    {
+      "name": "flflfl",
+      "budget": "4444",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 19
     }
   ],
   "categories": [
