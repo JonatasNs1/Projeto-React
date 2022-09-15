@@ -35,9 +35,22 @@ function Projects(){
           setProjects(data)
           setRemoveLoading(true)
         }).catch((err) => console.log(err))
-      }, 1000)
+      }, 300)
     }, [])
 
+    function removeProject(id){
+        fetch(`http://localhost:5000/projects/${id}`,{
+          method:'DELETE',
+          headers:{
+            'Content-Type':'application/json'
+          },
+        }).then((res)=> res.json)
+        .then((data)=>{
+           setProjects(projects.filter((project)=> project.id !== id))
+        }).catch(err => console.log(err))
+    }
+    // filter, map, reduce retorna um array novo, nao modificam o array original
+    // reduce não retorna um array, ele sempre vai retornar um array
     //Mensagens do sistema
     return(
         <div className={styles.project_container}>
@@ -58,7 +71,7 @@ function Projects(){
               // category={project.category}
               category={project.category.name}
               key={project.id}
-
+              handleRemove={removeProject}
                />
              )}
              {!removeLoading && <Loading/>}
